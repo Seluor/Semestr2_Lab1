@@ -27,20 +27,21 @@ namespace ConsoleApp1
         {//объявление нового подкласса
 
             Console.WriteLine("Enter a real number (a):");
-            int number = int.Parse(Console.ReadLine());
+            double number = int.Parse(Console.ReadLine());
             //Объявление числа a;
 
             Console.WriteLine("Enter an integer (n):");
-            int degree = int.Parse(Console.ReadLine());
+            double degree = int.Parse(Console.ReadLine());
             //Объявление числа n;
 
-            int power = 1;
+            double power = 1;
 
             // Используем цикл для умножения result на number degree раз
-            for (int index = 0; index < degree; ++index)
+            /*for (int index = 0; index < degree; ++index)
             {
                 power *= number;
-            }
+            }*/
+            power = Math.Exp (degree * Math.Log (number));
 
             Console.WriteLine("a^n = " + power);//Вывод результата
             Console.ReadKey();
@@ -55,21 +56,16 @@ namespace ConsoleApp1
             string number = Console.ReadLine();
 
             if (number.Length >= 2)
-                //если количество символов меньше двух, то действия не будут выполняться
             {
                 string firstChar,
                        secondChar, 
                        restOfString;
 
                 firstChar = number[0].ToString();
-                //копирование первого символа
                 secondChar = number[1].ToString();
-                //копирование второго символа
                 restOfString = number.Substring(2);
-                //копирование всех символов, начиная с третьего
 
                 Console.WriteLine(firstChar + restOfString + secondChar);
-                //первый символ + все символы, начиная с третьего + второй символ
             }
             else
             {
@@ -79,3 +75,4 @@ namespace ConsoleApp1
         }
     }
 }
+
