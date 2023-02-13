@@ -70,16 +70,22 @@ namespace ConsoleApp1
 
             string number = Console.ReadLine();
 
+
             if (number.Length >= 2) {
+
                 string firstChar,
                        secondChar,
                        restOfString;
 
                 firstChar = number[0].ToString();
+                //копирование первого символа
                 secondChar = number[1].ToString();
+                //копирование второго символа
                 restOfString = number.Substring(2);
+                //копирование всех символов, начиная с третьего
 
                 Console.WriteLine(firstChar + restOfString + secondChar);
+                //первый символ + все символы, начиная с третьего + второй символ
             }
             else {
                 Console.WriteLine("Error. The number (x) < 100.");
