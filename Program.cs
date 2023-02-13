@@ -1,63 +1,78 @@
-﻿using System;
+/***************************
+*Name: Roman Imamov        *
+*Group: PI-221             *
+*Lab number 1              *
+***************************/
+
+using System;
 
 namespace ConsoleApp1
 {
     class Program
     {
 
-        static void Main(string[] args)
-        {
+        static void Main(string[] args) {
 
-            Console.WriteLine("Enter a choise number:");//Объявление новой (переменной для выбора программы)
-            int choice = int.Parse(Console.ReadLine());
+            while (true) {
+                Console.ForegroundColor = ConsoleColor.Green;
+                Console.WriteLine("Enter a choise number: 1 is Power, 2 is Transform number, 3 is exit: ");
+                int choice = int.Parse(Console.ReadLine());
+            
+                switch (choice) {
+                    case 1:
+                        Power();
+                        break;
 
-            switch (choice)//Выбор выполнения программы
-            {
-                case 1:
-                    Power();
-                    break;
+                    case 2:
+                        TransformNumber();
+                        break;
 
-                case 2:
-                    TransformNumber();
-                    break;
+                    case 3:
+                        Environment.Exit(0);
+                        break;
+                }
+                Console.ForegroundColor = ConsoleColor.Red;
+                Console.WriteLine("Clear console? (y/n): ");
+                string variant = Console.ReadLine();
+                if (variant == "y") {
+                    Console.Clear();
+                }
+                Console.ForegroundColor = ConsoleColor.Green;
             }
         }
 
-        private static void Power()
-        {//объявление нового подкласса
+        private static void Power() {//объявление нового подкласса
 
             Console.WriteLine("Enter a real number (a):");
-            int number = int.Parse(Console.ReadLine());
-            //Объявление числа a;
+            double number = int.Parse(Console.ReadLine());
+            //number = a;
 
             Console.WriteLine("Enter an integer (n):");
-            int degree = int.Parse(Console.ReadLine());
-            //Объявление числа n;
+            double degree = int.Parse(Console.ReadLine());
+            //degree = n;
 
-            int power = 1;
+            double power = 1;
 
-            // Используем цикл для умножения result на number degree раз
-            for (int index = 0; index < degree; ++index)
+            //Используем цикл для умножения result на number degree раз
+            /*for (int index = 0; index < degree; ++index)
             {
                 power *= number;
-            }
+            }*/
+            power = Math.Round(Math.Exp(degree * Math.Log(number)));
 
             Console.WriteLine("a^n = " + power);//Вывод результата
             Console.ReadKey();
         }
 
-        private static void TransformNumber()
-        {
-
+        private static void TransformNumber() {
 
             Console.WriteLine("Enter a real number (x >= 100 ):");
 
             string number = Console.ReadLine();
 
-            if (number.Length >= 2)
-            {
+            if (number.Length >= 2) {
                 string firstChar,
-                       secondChar, 
+                       secondChar,
                        restOfString;
 
                 firstChar = number[0].ToString();
@@ -66,11 +81,9 @@ namespace ConsoleApp1
 
                 Console.WriteLine(firstChar + restOfString + secondChar);
             }
-            else
-            {
+            else {
                 Console.WriteLine("Error. The number (x) < 100.");
             }
-
         }
     }
 }
