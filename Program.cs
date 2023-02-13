@@ -1,4 +1,10 @@
-﻿using System;
+/***************************
+*Name: Roman Imamov        *
+*Group: PI-221             *
+*Lab number 1              *
+***************************/
+
+using System;
 
 namespace ConsoleApp1
 {
@@ -20,6 +26,9 @@ namespace ConsoleApp1
                 case 2:
                     TransformNumber();
                     break;
+
+                default: Environment.Exit( 0 );
+
             }
         }
 
