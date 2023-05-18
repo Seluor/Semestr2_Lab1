@@ -1,0 +1,8 @@
+C:\Users\Seluor\source\repos\LabSeven\bin\Debug\LabSeven.exe.config
+C:\Users\Seluor\source\repos\LabSeven\bin\Debug\LabSeven.exe
+C:\Users\Seluor\source\repos\LabSeven\bin\Debug\LabSeven.pdb
+C:\Users\Seluor\source\repos\LabSeven\obj\Debug\LabSeven.csproj.AssemblyReference.cache
+C:\Users\Seluor\source\repos\LabSeven\obj\Debug\LabSeven.csproj.SuggestedBindingRedirects.cache
+C:\Users\Seluor\source\repos\LabSeven\obj\Debug\LabSeven.csproj.CoreCompileInputs.cache
+C:\Users\Seluor\source\repos\LabSeven\obj\Debug\LabSeven.exe
+C:\Users\Seluor\source\repos\LabSeven\obj\Debug\LabSeven.pdb
