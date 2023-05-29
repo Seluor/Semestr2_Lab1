@@ -1,0 +1,8 @@
+C:\Users\Seluor\source\repos\LabSix\obj\Debug\LabSix.csproj.AssemblyReference.cache
+C:\Users\Seluor\source\repos\LabSix\obj\Debug\LabSix.csproj.SuggestedBindingRedirects.cache
+C:\Users\Seluor\source\repos\LabSix\obj\Debug\LabSix.csproj.CoreCompileInputs.cache
+C:\Users\Seluor\source\repos\LabSix\bin\Debug\LabSix.exe.config
+C:\Users\Seluor\source\repos\LabSix\bin\Debug\LabSix.exe
+C:\Users\Seluor\source\repos\LabSix\bin\Debug\LabSix.pdb
+C:\Users\Seluor\source\repos\LabSix\obj\Debug\LabSix.exe
+C:\Users\Seluor\source\repos\LabSix\obj\Debug\LabSix.pdb
